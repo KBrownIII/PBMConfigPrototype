@@ -33,117 +33,107 @@
         </header>
         <main>
             <div id="step-1" class="step">
-                <div class="dialog">
-                    <h2>Step 1: Client Hierarchy</h2>
-                    <label>Structure Type:</label>
-                    <select name="hierarchy-type">
-                        <option>Single Employer</option>
-                        <option>Multi-Employer Group</option>
-                        <option>Union Plan</option>
-                    </select>
-                    <label>Member Count:</label>
-                    <input type="number" name="member-count" placeholder="e.g., 500">
-                    <label>Coverage Scope:</label>
-                    <select name="coverage-scope">
-                        <option>Employees Only</option>
-                        <option>Employees + Dependents</option>
-                    </select>
-                    <button onclick="nextStep(1)">Confirm & Next</button>
-                </div>
+                <h2>Step 1: Client Hierarchy</h2>
                 <img src="hierarchy-icon.jpg" alt="Hierarchy Icon" class="step-image">
+                <label>Structure Type:</label>
+                <select name="hierarchy-type">
+                    <option>Single Employer</option>
+                    <option>Multi-Employer Group</option>
+                    <option>Union Plan</option>
+                </select>
+                <label>Member Count:</label>
+                <input type="number" name="member-count" placeholder="e.g., 500">
+                <label>Coverage Scope:</label>
+                <select name="coverage-scope">
+                    <option>Employees Only</option>
+                    <option>Employees + Dependents</option>
+                </select>
+                <button onclick="nextStep(1)">Confirm & Next</button>
             </div>
             <div id="step-2" class="step" style="display: none;">
-                <div class="dialog">
-                    <h2>Step 2: Formulary</h2>
-                    <label>Formulary Type:</label>
-                    <select name="formulary-type">
-                        <option>Open</option>
-                        <option>Closed</option>
-                        <option>Tiered</option>
-                    </select>
-                    <label>Custom Drugs?</label>
-                    <select name="custom-drugs">
-                        <option>Yes</option>
-                        <option>No</option>
-                    </select>
-                    <label>Tier Count:</label>
-                    <select name="tier-count">
-                        <option>2 Tiers</option>
-                        <option>3 Tiers</option>
-                        <option>4 Tiers</option>
-                    </select>
-                    <button onclick="nextStep(2)">Confirm & Next</button>
-                </div>
+                <h2>Step 2: Formulary</h2>
                 <img src="formulary-icon.jpg" alt="Formulary Icon" class="step-image">
+                <label>Formulary Type:</label>
+                <select name="formulary-type">
+                    <option>Open</option>
+                    <option>Closed</option>
+                    <option>Tiered</option>
+                </select>
+                <label>Custom Drugs?</label>
+                <select name="custom-drugs">
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+                <label>Tier Count:</label>
+                <select name="tier-count">
+                    <option>2 Tiers</option>
+                    <option>3 Tiers</option>
+                    <option>4 Tiers</option>
+                </select>
+                <button onclick="nextStep(2)">Confirm & Next</button>
             </div>
             <div id="step-3" class="step" style="display: none;">
-                <div class="dialog">
-                    <h2>Step 3: Copay</h2>
-                    <label>Cost Type:</label>
-                    <select name="cost-type">
-                        <option>Flat ($)</option>
-                        <option>Percentage (%)</option>
-                    </select>
-                    <label>Deductible?</label>
-                    <select name="deductible">
-                        <option>Yes</option>
-                        <option>No</option>
-                    </select>
-                    <label>Applicable Tiers:</label>
-                    <select name="tiers">
-                        <option>All Tiers</option>
-                        <option>Generic Only</option>
-                        <option>Brand Only</option>
-                    </select>
-                    <button onclick="nextStep(3)">Confirm & Next</button>
-                </div>
+                <h2>Step 3: Copay</h2>
                 <img src="copay-icon.jpg" alt="Copay Icon" class="step-image">
+                <label>Cost Type:</label>
+                <select name="cost-type">
+                    <option>Flat ($)</option>
+                    <option>Percentage (%)</option>
+                </select>
+                <label>Deductible?</label>
+                <select name="deductible">
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+                <label>Applicable Tiers:</label>
+                <select name="tiers">
+                    <option>All Tiers</option>
+                    <option>Generic Only</option>
+                    <option>Brand Only</option>
+                </select>
+                <button onclick="nextStep(3)">Confirm & Next</button>
             </div>
             <div id="step-4" class="step" style="display: none;">
-                <div class="dialog">
-                    <h2>Step 4: Network</h2>
-                    <label>Network Breadth:</label>
-                    <select name="network-breadth">
-                        <option>Broad</option>
-                        <option>Narrow</option>
-                        <option>Preferred</option>
-                    </select>
-                    <label>Out-of-Network?</label>
-                    <select name="out-network">
-                        <option>Yes</option>
-                        <option>No</option>
-                    </select>
-                    <label>Pharmacy Type:</label>
-                    <select name="pharmacy-type">
-                        <option>Retail Only</option>
-                        <option>Mail Order Only</option>
-                        <option>Both</option>
-                    </select>
-                    <button onclick="nextStep(4)">Confirm & Next</button>
-                </div>
+                <h2>Step 4: Network</h2>
                 <img src="network-icon.jpg" alt="Network Icon" class="step-image">
+                <label>Network Breadth:</label>
+                <select name="network-breadth">
+                    <option>Broad</option>
+                    <option>Narrow</option>
+                    <option>Preferred</option>
+                </select>
+                <label>Out-of-Network?</label>
+                <select name="out-network">
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+                <label>Pharmacy Type:</label>
+                <select name="pharmacy-type">
+                    <option>Retail Only</option>
+                    <option>Mail Order Only</option>
+                    <option>Both</option>
+                </select>
+                <button onclick="nextStep(4)">Confirm & Next</button>
             </div>
             <div id="step-5" class="step" style="display: none;">
-                <div class="dialog">
-                    <h2>Step 5: Clinical UM Rules</h2>
-                    <label>Prior Authorization?</label>
-                    <select name="prior-auth">
-                        <option>Yes</option>
-                        <option>No</option>
-                    </select>
-                    <label>Step Therapy?</label>
-                    <select name="step-therapy">
-                        <option>Yes</option>
-                        <option>No</option>
-                    </select>
-                    <label>Quantity Limits?</label>
-                    <select name="quantity-limits">
-                        <option>Yes</option>
-                        <option>No</option>
-                    </select>
-                    <button onclick="nextStep(5)">Confirm & Next</button>
-                </div>
+                <h2>Step 5: Clinical UM Rules</h2>
                 <img src="network-icon.jpg" alt="UM Icon" class="step-image">
+                <label>Prior Authorization?</label>
+                <select name="prior-auth">
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+                <label>Step Therapy?</label>
+                <select name="step-therapy">
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+                <label>Quantity Limits?</label>
+                <select name="quantity-limits">
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+                <button onclick="nextStep(5)">Confirm & Next</button>
             </div>
         </main>
     </div>
@@ -157,7 +147,7 @@
         </header>
         <div class="results-container">
             <div class="options">
-                <div class="option-card"> <!-- No extra div here -->
+                <div class="option-card">
                     <h3>Per Member Per Month (PMPM)</h3>
                     <button onclick="showModal('PMPM: $75.30 (Demo)')">Model PMPM</button>
                 </div>
