@@ -66,9 +66,9 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .step-image {
-    width: 88px; /* 75% bigger than 50px */
+    width: 88px; /* 75% bigger than original 50px */
     height: 88px;
-    border-radius: 44px; /* Half of width for circle */
+    border-radius: 44px; /* Half width for circle */
     margin: 10px auto;
     display: block;
 }
