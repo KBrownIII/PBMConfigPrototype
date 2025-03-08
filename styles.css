@@ -57,28 +57,20 @@ p {
     background-color: #50C878;
 }
 .step {
-    display: flex;
-    flex-direction: row; /* Explicitly horizontal */
-    justify-content: center;
-    align-items: center;
-    max-width: 700px;
-    margin: 20px auto;
-    gap: 20px;
-}
-.dialog {
-    background-color: #FFFFFF;
+    background-color: white;
     padding: 20px;
     border-radius: 15px;
     border: 2px solid #50C878;
+    margin: 20px auto;
+    max-width: 500px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    min-height: 250px;
-    text-align: left;
 }
 .step-image {
-    width: 250px;
-    height: auto;
-    border-radius: 10px;
+    width: 88px; /* 75% bigger than 50px */
+    height: 88px;
+    border-radius: 44px; /* Half of width for circle */
+    margin: 10px auto;
+    display: block;
 }
 label {
     display: block;
@@ -124,7 +116,7 @@ button:hover {
 }
 .results-container {
     display: flex;
-    flex-direction: row; /* Explicitly horizontal */
+    flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     max-width: 700px;
